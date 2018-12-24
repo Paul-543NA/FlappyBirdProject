@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DABDF5B721D112CB00F6D6D4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DABDF5B621D112CB00F6D6D4 /* main.cpp */; };
+		DABDF5C221D12BFF00F6D6D4 /* tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DABDF5C121D12BFF00F6D6D4 /* tests.cpp */; };
+		DABDF5C621D12E4500F6D6D4 /* bird.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DABDF5C521D12E4500F6D6D4 /* bird.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		DABDF5B321D112CB00F6D6D4 /* FlappyBird Genetique C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "FlappyBird Genetique C++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABDF5B621D112CB00F6D6D4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DABDF5BD21D120D000F6D6D4 /* Objects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Objects.h; sourceTree = "<group>"; };
+		DABDF5C021D12BB900F6D6D4 /* Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tests.h; sourceTree = "<group>"; };
+		DABDF5C121D12BFF00F6D6D4 /* tests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tests.cpp; sourceTree = "<group>"; };
+		DABDF5C521D12E4500F6D6D4 /* bird.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bird.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				DABDF5B621D112CB00F6D6D4 /* main.cpp */,
+				DABDF5BD21D120D000F6D6D4 /* Objects.h */,
+				DABDF5C521D12E4500F6D6D4 /* bird.cpp */,
+				DABDF5C021D12BB900F6D6D4 /* Tests.h */,
+				DABDF5C121D12BFF00F6D6D4 /* tests.cpp */,
 			);
 			path = "FlappyBird Genetique C++";
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DABDF5B721D112CB00F6D6D4 /* main.cpp in Sources */,
+				DABDF5C221D12BFF00F6D6D4 /* tests.cpp in Sources */,
+				DABDF5C621D12E4500F6D6D4 /* bird.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
