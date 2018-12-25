@@ -14,7 +14,7 @@
 
 class Object{
 //public:
-    //virtual void show(); // Displays the object on the graphic interface
+    //virtual void show() const; // Displays the object on the graphic interface
 };
 
 // ---------------------------------------------------------------------------------------------------
@@ -48,4 +48,20 @@ private:
     unsigned int m_fitness = 0;
     const int m_radius = 5;
     int const m_flapPower = 10;
+};
+
+// ---------------------------------------------------------------------------------------------------
+
+class Pipe: public Object{
+private:
+    Pipe(int x, int center){
+        m_x = x;
+        m_center = center;
+    }
+private:
+    int m_x;                     // x-position of the pipe
+    int m_center;                // y-position of the center of the hole, initialized randomly
+    const int m_holeheignt = 75; // Size of the hole
+    const int m_width = 30;      // width of the pipe
+    const int m_speed = 1;       // speed of the pipe
 };
