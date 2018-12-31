@@ -10,6 +10,8 @@
 		DABDF5B721D112CB00F6D6D4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DABDF5B621D112CB00F6D6D4 /* main.cpp */; };
 		DABDF5C221D12BFF00F6D6D4 /* tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DABDF5C121D12BFF00F6D6D4 /* tests.cpp */; };
 		DABDF5C621D12E4500F6D6D4 /* bird.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DABDF5C521D12E4500F6D6D4 /* bird.cpp */; };
+		DABDF5C921D2173C00F6D6D4 /* perceptron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DABDF5C721D2173C00F6D6D4 /* perceptron.cpp */; };
+		DAD1D24D21DA688300CA1AF5 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DAD1D24B21DA688300CA1AF5 /* Matrix.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		DABDF5C021D12BB900F6D6D4 /* Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tests.h; sourceTree = "<group>"; };
 		DABDF5C121D12BFF00F6D6D4 /* tests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tests.cpp; sourceTree = "<group>"; };
 		DABDF5C521D12E4500F6D6D4 /* bird.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bird.cpp; sourceTree = "<group>"; };
+		DABDF5C721D2173C00F6D6D4 /* perceptron.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = perceptron.cpp; sourceTree = "<group>"; };
+		DABDF5C821D2173C00F6D6D4 /* perceptron.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = perceptron.hpp; sourceTree = "<group>"; };
+		DAD1D24B21DA688300CA1AF5 /* Matrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix.cpp; sourceTree = "<group>"; };
+		DAD1D24C21DA688300CA1AF5 /* Matrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +70,11 @@
 			isa = PBXGroup;
 			children = (
 				DABDF5B621D112CB00F6D6D4 /* main.cpp */,
+				DAD1D24B21DA688300CA1AF5 /* Matrix.cpp */,
+				DAD1D24C21DA688300CA1AF5 /* Matrix.hpp */,
 				DABDF5BD21D120D000F6D6D4 /* Objects.h */,
+				DABDF5C721D2173C00F6D6D4 /* perceptron.cpp */,
+				DABDF5C821D2173C00F6D6D4 /* perceptron.hpp */,
 				DABDF5C521D12E4500F6D6D4 /* bird.cpp */,
 				DABDF5C021D12BB900F6D6D4 /* Tests.h */,
 				DABDF5C121D12BFF00F6D6D4 /* tests.cpp */,
@@ -129,8 +139,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DABDF5B721D112CB00F6D6D4 /* main.cpp in Sources */,
+				DABDF5C921D2173C00F6D6D4 /* perceptron.cpp in Sources */,
 				DABDF5C221D12BFF00F6D6D4 /* tests.cpp in Sources */,
 				DABDF5C621D12E4500F6D6D4 /* bird.cpp in Sources */,
+				DAD1D24D21DA688300CA1AF5 /* Matrix.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
