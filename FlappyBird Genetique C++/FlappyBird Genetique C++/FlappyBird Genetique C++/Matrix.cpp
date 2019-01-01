@@ -32,34 +32,34 @@ int* Matrix::shape() const{
     return shape;
 }
 
-Matrix* Matrix::operator+(Matrix* B) const{
-    int* c_shape = this->shape();
-    Matrix* C = new Matrix(c_shape[0], c_shape[1]);
+Matrix operator+(const Matrix& A, const Matrix& B){
+    int* c_shape = A.shape();
+    Matrix C = Matrix(c_shape[0], c_shape[1]);
     for (int itr=0; itr<c_shape[0]; itr++) {
-        for (int jtr=0; jtr<c_shape[0]; jtr++) {
-            C->m_values[itr][jtr] = this->val(itr, jtr) + B->val(itr, jtr);
+        for (int jtr=0; jtr<c_shape[1]; jtr++) {
+            C.m_values[itr][jtr] = A.val(itr, jtr) + B.val(itr, jtr);
         }
     }
     return C;
 }
 
-Matrix* Matrix::operator*(Matrix* B) const{
-    int* c_shape = this->shape();
-    Matrix* C = new Matrix(c_shape[0], c_shape[1]);
+Matrix operator*(const Matrix& A, const Matrix& B){
+    int* c_shape = A.shape();
+    Matrix C = Matrix(c_shape[0], c_shape[1]);
     for (int itr=0; itr<c_shape[0]; itr++) {
-        for (int jtr=0; jtr<c_shape[0]; jtr++) {
-            C->m_values[itr][jtr] = this->val(itr, jtr) * B->val(itr, jtr);
+        for (int jtr=0; jtr<c_shape[1]; jtr++) {
+            C.m_values[itr][jtr] = A.val(itr, jtr) * B.val(itr, jtr);
         }
     }
     return C;
 }
 
-Matrix* Matrix::T() const{
+Matrix Matrix::T() const{
     int* c_shape = this->shape();
-    Matrix* C = new Matrix(c_shape[1], c_shape[0]);
+    Matrix C = Matrix(c_shape[1], c_shape[0]);
     for (int itr=0; itr<c_shape[0]; itr++) {
         for (int jtr=0; jtr<c_shape[0]; jtr++) {
-            C->m_values[jtr][itr] = this->val(itr,jtr);
+            C.m_values[jtr][itr] = this->val(itr,jtr);
         }
     }
     return C;
@@ -74,3 +74,4 @@ void Matrix::print() const{
         } std::cout << "||" << std::endl;
     }std::cout << "]" << std::endl;
 }
+

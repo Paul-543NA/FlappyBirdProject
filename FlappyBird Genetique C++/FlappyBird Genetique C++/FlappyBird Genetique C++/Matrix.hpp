@@ -44,10 +44,10 @@ public:
 
     
     // Operations sur les matrices
-    Matrix* operator+(Matrix* B) const;  // Somme
-    Matrix* operator*(Matrix* B) const;  // Multiplication terme à terme
-    Matrix* dot(Matrix& B) const;        // Produit
-    Matrix* T() const;                   // Transposée
+    friend Matrix operator+(const Matrix& A, const Matrix& B);  // Somme
+    friend Matrix operator*(const Matrix& A, const Matrix& B);  // Multiplication terme à terme
+    Matrix dot(Matrix& B) const;        // Produit
+    Matrix T() const;                   // Transposée
     
 private:
     int m_n;
