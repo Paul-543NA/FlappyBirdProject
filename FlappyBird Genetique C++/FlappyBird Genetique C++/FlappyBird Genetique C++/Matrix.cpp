@@ -54,6 +54,25 @@ Matrix operator*(const Matrix& A, const Matrix& B){
     return C;
 }
 
+Matrix Matrix::dot(const Matrix& B) const{
+    int* A_shape = this->shape();
+    int* B_shape = B.shape();
+    Matrix C = Matrix(A_shape[0], B_shape[1]);
+    int sum = 0;
+    if (A_shape[1] == B_shape[0]) {
+        for (int itr=0; itr<A_shape[0]; itr++) {
+            for (int jtr=0; jtr<B_shape[1]; jtr++) {
+                for (int ktr = 0; ktr<A_shape[1]; ktr++) {
+                    sum += this->val(itr, ktr)*B.val(ktr, jtr);
+                }
+                C.m_values[itr][jtr] = sum;
+                sum = 0;
+            }
+        }
+    }
+    return C;
+}
+
 Matrix Matrix::T() const{
     int* c_shape = this->shape();
     Matrix C = Matrix(c_shape[1], c_shape[0]);

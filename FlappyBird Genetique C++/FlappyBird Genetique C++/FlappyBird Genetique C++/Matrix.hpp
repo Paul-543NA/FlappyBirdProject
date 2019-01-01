@@ -46,7 +46,7 @@ public:
     // Operations sur les matrices
     friend Matrix operator+(const Matrix& A, const Matrix& B);  // Somme
     friend Matrix operator*(const Matrix& A, const Matrix& B);  // Multiplication terme à terme
-    Matrix dot(Matrix& B) const;        // Produit
+    Matrix dot(const Matrix& B) const;        // Produit
     Matrix T() const;                   // Transposée
     
 private:

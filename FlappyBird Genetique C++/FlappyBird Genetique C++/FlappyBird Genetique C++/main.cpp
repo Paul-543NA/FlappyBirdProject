@@ -30,5 +30,7 @@ int main(int argc, const char * argv[]) {
     C.print();
     Matrix D = C * C;
     D.print();
+    Matrix E = C.dot(C.T());
+    E.print();
     return 0;
 }
