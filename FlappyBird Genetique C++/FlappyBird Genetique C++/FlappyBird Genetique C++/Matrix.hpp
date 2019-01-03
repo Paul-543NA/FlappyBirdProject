@@ -11,22 +11,14 @@
 
 #include <stdio.h>
 
-#endif /* Matrix_hpp */
 
 class Matrix{
     
-/*
- TODOLIST:
-  - Initialisations particulieres (0, 1, random)
-  - Corriger les bugs avec les operateurs
-  - Faire le constructeur par copie
-  - Faire un fichier test pour la classe
- */
-    
 public:
     
-    // Constructeur
+    // Constructeur, matrices remplises par defaut par des float entre 0 et 1
     Matrix(int m, int n);
+    Matrix();
     
     // Destrusteur
     ~Matrix();
@@ -37,6 +29,8 @@ public:
     // Affichage
     void print() const;
     
+    // Remlpis une matrice avec des float aléatoirs entre 0 et 1
+    void randomInit();
     // Acces a une valeur de la matrice
     float val(int m, int n) const{return m_values[m][n];}
     // Modification d'une valeur de la matrice
@@ -47,10 +41,12 @@ public:
     friend Matrix operator+(const Matrix& A, const Matrix& B);  // Somme
     friend Matrix operator*(const Matrix& A, const Matrix& B);  // Multiplication terme à terme
     Matrix dot(const Matrix& B) const;        // Produit
-    Matrix T() const;                   // Transposée
+    Matrix T() const;                         // Transposée
     
 private:
     int m_n;
     int m_m;
     float** m_values;
 };
+
+#endif /* Matrix_hpp */

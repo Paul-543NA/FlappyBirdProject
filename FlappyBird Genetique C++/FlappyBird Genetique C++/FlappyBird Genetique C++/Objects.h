@@ -9,9 +9,6 @@
 #ifndef Objects_h
 #define Objects_h
 
-
-#endif /* Objects_h */
-
 class Object{
 //public:
     //virtual void show() const; // Displays the object on the graphic interface
@@ -65,3 +62,5 @@ private:
     const int m_width = 30;      // width of the pipe
     const int m_speed = 1;       // speed of the pipe
 };
+
+#endif /* Objects_h */

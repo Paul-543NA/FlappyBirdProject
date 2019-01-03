@@ -9,11 +9,13 @@
 #ifndef Tests_h
 #define Tests_h
 
+#include "Objects.h"
+#include "Matrix.hpp"
+#include "perceptron.hpp"
 
-#endif /* Tests_h */
-
-
+void testMatrix();
 void testBird();
 void testPips();
 void testPerceptron();
 
+#endif /* Tests_h */

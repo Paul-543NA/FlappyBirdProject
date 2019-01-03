@@ -9,6 +9,10 @@
 #include "Matrix.hpp"
 #include <iostream>
 
+float floatRand() {
+    return float(rand()) / (float(RAND_MAX) + 1.0);
+}
+
 Matrix::Matrix(int m, int n){ // avec deux entiers
     m_m = m;
     m_n = n;
@@ -16,13 +20,38 @@ Matrix::Matrix(int m, int n){ // avec deux entiers
     for (int itr=0; itr < m; itr ++) {
         m_values[itr] = new float[n];
     }
+    srand(static_cast<unsigned int>(clock()));
+    int* shape = this->shape();
+    for (int itr=0; itr<shape[0]; itr++) {
+        for (int jtr=0; jtr<shape[1]; jtr++) {
+            m_values[itr][jtr] = floatRand();
+        }
+    }
+}
+
+Matrix::Matrix(){ // avec deux entiers
+    int m = 2;
+    int n = 2;
+    m_m = m;
+    m_n = n;
+    m_values = new float*[m];
+    for (int itr=0; itr < m; itr ++) {
+        m_values[itr] = new float[n];
+    }
+    srand(static_cast<unsigned int>(clock()));
+    int* shape = this->shape();
+    for (int itr=0; itr<shape[0]; itr++) {
+        for (int jtr=0; jtr<shape[1]; jtr++) {
+            m_values[itr][jtr] = floatRand();
+        }
+    }
 }
 
 Matrix::~Matrix(){
     for (int itr=0; itr<this->m_m; itr++) {
-        delete m_values[itr];
+        //delete m_values[itr];
     }
-    delete m_values;
+    //delete m_values;
 }
 
 int* Matrix::shape() const{
@@ -85,6 +114,10 @@ Matrix Matrix::T() const{
 }
 
 void Matrix::print() const{
+    std::cout << "--- Matrix objsct ---" << std::endl
+    ;
+    std::cout << "Shape: (" << this->shape()[0] << ", " << this->shape()[1] << ")" << std::endl
+    ;
     std::cout << "[";
     int* shape = this->shape();
     for (int itr=0; itr<shape[0]; itr++) {
@@ -93,4 +126,3 @@ void Matrix::print() const{
         } std::cout << "||" << std::endl;
     }std::cout << "]" << std::endl;
 }
-
