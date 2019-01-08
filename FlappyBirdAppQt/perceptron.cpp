@@ -1,13 +1,4 @@
-//
-//  perceptron.cpp
-//  FlappyBird Genetique C++
-//
-//  Created by Paul on 25/12/2018.
-//  Copyright © 2018 Paul. All rights reserved.
-//
-
-#include "perceptron.hpp"
-
+#include "perceptron.h"
 
 Matrix sigmoid(Matrix M){
     int* res_shape = M.shape();
@@ -59,7 +50,7 @@ void Perceptron::print() const{
     std::cout << "Depth: " << this->m_depth << std::endl;
     Matrix* M = m_biaises[0];
     M->print();
-    /*std::cout << "Profile: ";
+    std::cout << "Profile: ";
     for (int itr=0; itr<this->m_depth; itr++) {
         std::cout << this->m_profile[itr] << " ";
     }
@@ -71,10 +62,10 @@ void Perceptron::print() const{
         std::cout << "(" << shape[0] << ", " << shape[1] << ")";
     }
     std::cout << std::endl;
-    /*
     std::cout << "Biaises shapes: ";
-    for (int itr=0; itr<this->m_depth; itr++) {
-        std::cout << "(" << this->m_biaises[itr].shape()[0] << ", " << this->m_biaises[itr].shape()[1] << ")";
+    for (int itr=0; itr<this->m_depth-1; itr++) {
+        std::cout << "(" << this->m_biaises[itr]->shape()[0] << ", " << this->m_biaises[itr]->shape()[1] << ")";
     }
-    std::cout << std::endl;*/
+    std::cout << std::endl;
 }
+

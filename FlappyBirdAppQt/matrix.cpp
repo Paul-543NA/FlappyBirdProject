@@ -1,12 +1,4 @@
-//
-//  Matrix.cpp
-//  FlappyBird Genetique C++
-//
-//  Created by Paul on 31/12/2018.
-//  Copyright © 2018 Paul. All rights reserved.
-//
-
-#include "Matrix.hpp"
+#include "matrix.h"
 #include <iostream>
 
 float floatRand() {
@@ -49,9 +41,9 @@ Matrix::Matrix(){ // avec deux entiers
 
 Matrix::~Matrix(){
     for (int itr=0; itr<this->m_m; itr++) {
-        //delete m_values[itr];
+        delete m_values[itr];
     }
-    //delete m_values;
+    delete m_values;
 }
 
 int* Matrix::shape() const{
@@ -106,7 +98,7 @@ Matrix Matrix::T() const{
     int* c_shape = this->shape();
     Matrix C = Matrix(c_shape[1], c_shape[0]);
     for (int itr=0; itr<c_shape[0]; itr++) {
-        for (int jtr=0; jtr<c_shape[0]; jtr++) {
+        for (int jtr=0; jtr<c_shape[1]; jtr++) {
             C.m_values[jtr][itr] = this->val(itr,jtr);
         }
     }
@@ -126,3 +118,4 @@ void Matrix::print() const{
         } std::cout << "||" << std::endl;
     }std::cout << "]" << std::endl;
 }
+

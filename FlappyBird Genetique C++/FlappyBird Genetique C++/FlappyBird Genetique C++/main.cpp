@@ -19,6 +19,6 @@ int main(int argc, const char * argv[]) {
     std::cout << "Hello, World!\n";
     testBird();
     testMatrix();
-    // testPerceptron(); Fait planter le programme ccar soucis avec la classe
+    testPerceptron(); //Fait planter le programme ccar soucis avec la classe
     return 0;
 }
