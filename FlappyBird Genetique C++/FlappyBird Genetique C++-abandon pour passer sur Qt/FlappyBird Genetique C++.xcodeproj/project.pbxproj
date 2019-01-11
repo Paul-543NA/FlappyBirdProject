@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DABDF5B721D112CB00F6D6D4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DABDF5B621D112CB00F6D6D4 /* main.cpp */; };
-		DABDF5C221D12BFF00F6D6D4 /* tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DABDF5C121D12BFF00F6D6D4 /* tests.cpp */; };
-		DABDF5C621D12E4500F6D6D4 /* bird.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DABDF5C521D12E4500F6D6D4 /* bird.cpp */; };
-		DABDF5C921D2173C00F6D6D4 /* perceptron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DABDF5C721D2173C00F6D6D4 /* perceptron.cpp */; };
-		DAD1D24D21DA688300CA1AF5 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DAD1D24B21DA688300CA1AF5 /* Matrix.cpp */; };
+		DA9638F821E8C6CD00C426A8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA9638EB21E8C6CB00C426A8 /* main.cpp */; };
+		DA9638F921E8C6CD00C426A8 /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA9638EC21E8C6CB00C426A8 /* matrix.cpp */; };
+		DA9638FA21E8C6CD00C426A8 /* perceptron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA9638ED21E8C6CB00C426A8 /* perceptron.cpp */; };
+		DA9638FB21E8C6CD00C426A8 /* tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA9638F421E8C6CC00C426A8 /* tests.cpp */; };
+		DA9638FD21E8C6CD00C426A8 /* bird.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA9638F621E8C6CC00C426A8 /* bird.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,16 +27,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA9638EA21E8C6CB00C426A8 /* Objects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Objects.h; path = "/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/Objects.h"; sourceTree = "<absolute>"; };
+		DA9638EB21E8C6CB00C426A8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/main.cpp"; sourceTree = "<absolute>"; };
+		DA9638EC21E8C6CB00C426A8 /* matrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = matrix.cpp; path = "/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/matrix.cpp"; sourceTree = "<absolute>"; };
+		DA9638ED21E8C6CB00C426A8 /* perceptron.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = perceptron.cpp; path = "/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/perceptron.cpp"; sourceTree = "<absolute>"; };
+		DA9638EE21E8C6CB00C426A8 /* tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tests.h; path = "/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/tests.h"; sourceTree = "<absolute>"; };
+		DA9638EF21E8C6CB00C426A8 /* matrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = matrix.h; path = "/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/matrix.h"; sourceTree = "<absolute>"; };
+		DA9638F021E8C6CB00C426A8 /* bird.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = bird.h; path = "/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/bird.h"; sourceTree = "<absolute>"; };
+		DA9638F221E8C6CB00C426A8 /* perceptron.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = perceptron.hpp; path = "/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/perceptron.hpp"; sourceTree = "<absolute>"; };
+		DA9638F421E8C6CC00C426A8 /* tests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = tests.cpp; path = "/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/tests.cpp"; sourceTree = "<absolute>"; };
+		DA9638F621E8C6CC00C426A8 /* bird.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = bird.cpp; path = "/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/bird.cpp"; sourceTree = "<absolute>"; };
+		DA9638F721E8C6CC00C426A8 /* perceptron.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = perceptron.h; path = "/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/perceptron.h"; sourceTree = "<absolute>"; };
 		DABDF5B321D112CB00F6D6D4 /* FlappyBird Genetique C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "FlappyBird Genetique C++"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DABDF5B621D112CB00F6D6D4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		DABDF5BD21D120D000F6D6D4 /* Objects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Objects.h; sourceTree = "<group>"; };
-		DABDF5C021D12BB900F6D6D4 /* Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tests.h; sourceTree = "<group>"; };
-		DABDF5C121D12BFF00F6D6D4 /* tests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tests.cpp; sourceTree = "<group>"; };
-		DABDF5C521D12E4500F6D6D4 /* bird.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bird.cpp; sourceTree = "<group>"; };
-		DABDF5C721D2173C00F6D6D4 /* perceptron.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = perceptron.cpp; sourceTree = "<group>"; };
-		DABDF5C821D2173C00F6D6D4 /* perceptron.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = perceptron.hpp; sourceTree = "<group>"; };
-		DAD1D24B21DA688300CA1AF5 /* Matrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix.cpp; sourceTree = "<group>"; };
-		DAD1D24C21DA688300CA1AF5 /* Matrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,15 +71,17 @@
 		DABDF5B521D112CB00F6D6D4 /* FlappyBird Genetique C++ */ = {
 			isa = PBXGroup;
 			children = (
-				DABDF5B621D112CB00F6D6D4 /* main.cpp */,
-				DAD1D24B21DA688300CA1AF5 /* Matrix.cpp */,
-				DAD1D24C21DA688300CA1AF5 /* Matrix.hpp */,
-				DABDF5BD21D120D000F6D6D4 /* Objects.h */,
-				DABDF5C721D2173C00F6D6D4 /* perceptron.cpp */,
-				DABDF5C821D2173C00F6D6D4 /* perceptron.hpp */,
-				DABDF5C521D12E4500F6D6D4 /* bird.cpp */,
-				DABDF5C021D12BB900F6D6D4 /* Tests.h */,
-				DABDF5C121D12BFF00F6D6D4 /* tests.cpp */,
+				DA9638F621E8C6CC00C426A8 /* bird.cpp */,
+				DA9638F021E8C6CB00C426A8 /* bird.h */,
+				DA9638EB21E8C6CB00C426A8 /* main.cpp */,
+				DA9638EC21E8C6CB00C426A8 /* matrix.cpp */,
+				DA9638EF21E8C6CB00C426A8 /* matrix.h */,
+				DA9638EA21E8C6CB00C426A8 /* Objects.h */,
+				DA9638ED21E8C6CB00C426A8 /* perceptron.cpp */,
+				DA9638F721E8C6CC00C426A8 /* perceptron.h */,
+				DA9638F221E8C6CB00C426A8 /* perceptron.hpp */,
+				DA9638F421E8C6CC00C426A8 /* tests.cpp */,
+				DA9638EE21E8C6CB00C426A8 /* tests.h */,
 			);
 			path = "FlappyBird Genetique C++";
 			sourceTree = "<group>";
@@ -138,11 +142,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DABDF5B721D112CB00F6D6D4 /* main.cpp in Sources */,
-				DABDF5C921D2173C00F6D6D4 /* perceptron.cpp in Sources */,
-				DABDF5C221D12BFF00F6D6D4 /* tests.cpp in Sources */,
-				DABDF5C621D12E4500F6D6D4 /* bird.cpp in Sources */,
-				DAD1D24D21DA688300CA1AF5 /* Matrix.cpp in Sources */,
+				DA9638F821E8C6CD00C426A8 /* main.cpp in Sources */,
+				DA9638FD21E8C6CD00C426A8 /* bird.cpp in Sources */,
+				DA9638FA21E8C6CD00C426A8 /* perceptron.cpp in Sources */,
+				DA9638F921E8C6CD00C426A8 /* matrix.cpp in Sources */,
+				DA9638FB21E8C6CD00C426A8 /* tests.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

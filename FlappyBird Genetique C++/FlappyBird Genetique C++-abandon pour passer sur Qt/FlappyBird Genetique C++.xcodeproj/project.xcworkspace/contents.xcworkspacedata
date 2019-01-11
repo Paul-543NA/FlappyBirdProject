@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/bird.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/bird.h">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/main.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/mainwindow.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/mainwindow.h">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/matrix.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/matrix.h">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/Matrix.hpp">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/Objects.h">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/perceptron.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/perceptron.h">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/perceptron.hpp">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/tests.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/paul/github/FlappyBirdProject/FlappyBird Genetique C++/FlappyBird Genetique C++/FlappyBird Genetique C++/tests.h">
+   </FileRef>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>

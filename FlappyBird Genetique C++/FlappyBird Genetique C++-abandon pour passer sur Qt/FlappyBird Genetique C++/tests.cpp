@@ -1,15 +1,6 @@
-//
-//  tests.cpp
-//  FlappyBird Genetique C++
-//
-//  Created by Paul on 24/12/2018.
-//  Copyright © 2018 Paul. All rights reserved.
-//
+#include "tests.h"
 
 #include <iostream>
-
-#include "Tests.h"
-
 
 void testBird(){
     Bird* bird = new Bird(1, 4);
@@ -36,6 +27,12 @@ void testMatrix(){
     E.print();
     Matrix R = Matrix(4, 4);
     R.print();
+    Matrix U(1, 3);
+    Matrix V(3, 1);
+    U.dot(V).print();
+    Matrix testCopy = A;
+    testCopy.print();
+    std::cout << "Test Matrices ok" << std::endl;
 }
 
 void testPerceptron(){
@@ -45,4 +42,8 @@ void testPerceptron(){
     profile[2] = 3;
     Perceptron P = Perceptron(3, profile);
     P.print();
+    Matrix A = Matrix(1, 2);
+    A.print();
+    P.feedForward(A).print();
 }
+

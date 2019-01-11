@@ -1,12 +1,4 @@
-//
-//  Matrix.cpp
-//  FlappyBird Genetique C++
-//
-//  Created by Paul on 31/12/2018.
-//  Copyright © 2018 Paul. All rights reserved.
-//
-
-#include "Matrix.hpp"
+#include "matrix.h"
 #include <iostream>
 
 float floatRand() {
@@ -25,6 +17,21 @@ Matrix::Matrix(int m, int n){ // avec deux entiers
     for (int itr=0; itr<shape[0]; itr++) {
         for (int jtr=0; jtr<shape[1]; jtr++) {
             m_values[itr][jtr] = floatRand();
+        }
+    }
+}
+
+Matrix::Matrix(const Matrix &M){ // avec deux entiers
+    m_m = M.m_m;
+    m_n = M.m_n;
+    m_values = new float*[m_m];
+    for (int itr=0; itr < m_m; itr ++) {
+        m_values[itr] = new float[m_n];
+    }
+    int* shape = this->shape();
+    for (int itr=0; itr<shape[0]; itr++) {
+        for (int jtr=0; jtr<shape[1]; jtr++) {
+            m_values[itr][jtr] = M.m_values[itr][jtr];
         }
     }
 }
@@ -49,9 +56,9 @@ Matrix::Matrix(){ // avec deux entiers
 
 Matrix::~Matrix(){
     for (int itr=0; itr<this->m_m; itr++) {
-        //delete m_values[itr];
+        delete m_values[itr];
     }
-    //delete m_values;
+    delete m_values;
 }
 
 int* Matrix::shape() const{
@@ -106,7 +113,7 @@ Matrix Matrix::T() const{
     int* c_shape = this->shape();
     Matrix C = Matrix(c_shape[1], c_shape[0]);
     for (int itr=0; itr<c_shape[0]; itr++) {
-        for (int jtr=0; jtr<c_shape[0]; jtr++) {
+        for (int jtr=0; jtr<c_shape[1]; jtr++) {
             C.m_values[jtr][itr] = this->val(itr,jtr);
         }
     }
@@ -125,4 +132,25 @@ void Matrix::print() const{
             std::cout << this->val(itr, jtr) << ", ";
         } std::cout << "||" << std::endl;
     }std::cout << "]" << std::endl;
+}
+
+void Matrix::operator=(const Matrix& A){
+    for (int itr=0; itr<this->m_m; itr++) {
+        delete m_values[itr];
+    }
+    delete m_values;
+    
+    this->m_m = A.shape()[0];
+    this->m_n = A.shape()[1];
+    
+    m_values = new float*[this->m_m];
+    for (int itr=0; itr < this->m_m; itr ++) {
+        m_values[itr] = new float[this->m_n];
+    }
+    
+    for (int itr=0; itr<this->m_m; itr++) {
+        for (int jtr=0; jtr<this->m_n; jtr++) {
+            this->set_val(itr, jtr, A.val(itr, jtr));
+        }
+    }
 }

@@ -1,13 +1,5 @@
-//
-//  bird.cpp
-//  FlappyBird Genetique C++
-//
-//  Created by Paul on 24/12/2018.
-//  Copyright © 2018 Paul. All rights reserved.
-//
-
+#include "bird.h"
 #include <iostream>
-#include "Objects.h"
 
 int* Bird::getCoords() const {
     static int coords [2];

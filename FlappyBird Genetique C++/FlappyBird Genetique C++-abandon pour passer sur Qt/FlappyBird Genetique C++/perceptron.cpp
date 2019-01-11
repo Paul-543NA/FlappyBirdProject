@@ -1,13 +1,4 @@
-//
-//  perceptron.cpp
-//  FlappyBird Genetique C++
-//
-//  Created by Paul on 25/12/2018.
-//  Copyright © 2018 Paul. All rights reserved.
-//
-
-#include "perceptron.hpp"
-
+#include "perceptron.h"
 
 Matrix sigmoid(Matrix M){
     int* res_shape = M.shape();
@@ -39,15 +30,25 @@ Perceptron::Perceptron(int depth, int profile[]){
 }
 
 Perceptron::~Perceptron(){
-    //delete m_weights;
-    //delete m_biaises;
-    //delete m_profile;
+    delete m_weights;
+    delete m_biaises;
+    delete m_profile;
 }
 
 Matrix Perceptron::feedForward(Matrix X) const{
-    Matrix res;
-    for (int itr=0; itr<this->m_depth; itr++) {
-        res = X.dot(*m_weights[itr]) + *m_biaises[itr];
+    Matrix res = X;
+    Matrix M(1, 6);
+    for (int itr=0; itr<this->m_depth-1; itr++) {
+        std::cout << itr << " #-#-#-#-#-#-#-#-#-#-#-#-#" << std::endl;
+        std::cout << "Res_shape: " << res.shape()[0] << "-"<< res.shape()[1] << std::endl;
+        res.print();
+        res.dot(*(m_weights[itr])).print();
+        std::cout << "W_shape:   " << m_weights[itr]->shape()[0] << "-"<< m_weights[itr]->shape()[1] << std::endl;
+        m_weights[itr]->print();
+        std::cout << "dot_shape: " << res.dot(*m_weights[itr]).shape()[0] << "-"<< res.dot(*m_weights[itr]).shape()[1] << std::endl;
+        std::cout << "B_shape:   " << m_biaises[itr]->shape()[0] << "-"<< m_biaises[itr]->shape()[1] << std::endl;
+        res = sigmoid(res.dot(*m_weights[itr]) + (*m_biaises[itr]).T());
+        res.print();
     }
     return res;
 }
@@ -59,7 +60,7 @@ void Perceptron::print() const{
     std::cout << "Depth: " << this->m_depth << std::endl;
     Matrix* M = m_biaises[0];
     M->print();
-    /*std::cout << "Profile: ";
+    std::cout << "Profile: ";
     for (int itr=0; itr<this->m_depth; itr++) {
         std::cout << this->m_profile[itr] << " ";
     }
@@ -71,10 +72,10 @@ void Perceptron::print() const{
         std::cout << "(" << shape[0] << ", " << shape[1] << ")";
     }
     std::cout << std::endl;
-    /*
     std::cout << "Biaises shapes: ";
-    for (int itr=0; itr<this->m_depth; itr++) {
-        std::cout << "(" << this->m_biaises[itr].shape()[0] << ", " << this->m_biaises[itr].shape()[1] << ")";
+    for (int itr=0; itr<this->m_depth-1; itr++) {
+        std::cout << "(" << this->m_biaises[itr]->shape()[0] << ", " << this->m_biaises[itr]->shape()[1] << ")";
     }
-    std::cout << std::endl;*/
+    std::cout << std::endl;
 }
+
